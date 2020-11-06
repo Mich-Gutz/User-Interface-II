@@ -1,14 +1,68 @@
-/* Add CSS styling here */
-0px; 
- line-height:;
+/* Reset to html */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+
+
+/* My code begins here */
+body{
+    margin:0px;
+    padding:0px;
+    background:#0B0C10;
+}
+
+h1 {color:#66FCF1;
+font-family: 'Abril Fatface', cursive;
+  font-size:60px;
+  text-align:center;
+  background:#1F2833;
+  padding:15px;
+  border-radius:20px;  
+}
+
+.main{
+  color:#66FCF1;
+  font-family: 'Abril Fatface', cursive;
+  font-size:30px;
+  text-align:center;
+  padding:20px; 
+  line-height:40px;
+  background:#1F2823;
+  margin-left:20%;
+  margin-right:20%;
+  border:dotted white;
+/*   margin: 0 auto; */
 }
 
 .nav ul{
     list-style:none;
     background:#45A29E;
     text-align:center;
-    padding:10px;
-    margin:0px;
+    border: solid #66FCF1;
+    margin-left: auto;
+   martin-right:auto; 
 }
 
 .nav li{
@@ -22,7 +76,6 @@
     padding:20px;
     font-size: 40px;
     font-family:Helvetica;
-    font-stle:bold;
   border-radius:20px;
 }
 
@@ -30,5 +83,28 @@
     background:powderblue;
     transition: 0.5s;
     color:black;
-  
 }
+
+#image-container{  background:url(https://i.picsum.photos/id/2/5616/3744.jpg?hmac=l1XcSPFigtRLcO2F6Li-t17EIeylkWH94Oowb4vzApk);
+  background-position:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  padding:180px;
+}
+
+
+.gallery{
+  display:flex;
+/*   flex-direction:row; */
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  padding:10% 0;
+  transparency:70%;  
+}
+  
+ .gallery img:hover{
+  transform: scaleX(-1);
+   border:solid #66FCF1 2px;
+ }
