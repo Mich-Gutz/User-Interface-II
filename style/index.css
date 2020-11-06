@@ -5,3 +5,26 @@ body{
     padding:0px;
     background:powderblue;
 }
+.nav ul{
+    list-style: none;
+    background:#4040a1;
+    text-align:center;
+    padding:0;
+    margin: 0;
+
+}.nav li{
+    display:inline-block;
+}
+.nav a{ text-decoration: none;
+    color:white;
+    width:100px;
+    display:block;
+    padding:15px;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.nav a: hover{
+    background:powderblue;
+    transition: 0.5s;
+}
