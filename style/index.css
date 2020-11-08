@@ -101,7 +101,7 @@ font-family: 'Abril Fatface', cursive;
   flex-wrap:wrap;
   justify-content:space-evenly;
   padding:0px;
-  transparency:70%;
+  opacity:70%;
   align-items:center;
   margin:20%;
 }
@@ -120,7 +120,7 @@ img{width: 200px;
     text-align:center;
     border: solid #66FCF1;
     margin-left: auto;
-   martin-right:auto;
+   margin-right:auto;
   padding:50px;
 }
 
@@ -131,7 +131,9 @@ font-family: 'Abril Fatface', cursive;
   text-align:center;
   background:#1F2833;
   padding:5px;
-  border-radius:20px;}
+  border-radius:20px;
+  margin-bottom: 50px;
+}
 
 .fa {
   padding: 20px;
@@ -139,8 +141,10 @@ font-family: 'Abril Fatface', cursive;
   width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
-  border radius:50%;
+  margin: 15px 2px;
+  border-radius:50%;
+  display:inline;
+  /* margin-top: 15px; */
 }
 
 .fa:hover {
