@@ -20,7 +20,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+  *{
+  box-sizing: border-box;
+}
 
 
 
@@ -86,36 +88,6 @@ font-family: 'Abril Fatface', cursive;
     transition: 0.5s;
     color:black;
 }
-  
-/* }
-section .cont .nav{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-around;}
-
- .nav {
-    list-style:none;
-    background:#45A29E;
-    text-align:center;
-    border: solid #66FCF1;
-    margin-left: auto;
-   martin-right:auto; 
-}
-
-.nav li{
-    display:inline-block;
-  
-}
-.nav ul { text-decoration: none;
-    color:white;
-    width:200px;
-    display:block;
-    padding:20px;
-    font-size: 40px;
-    font-family:Helvetica;
-  border-radius:20px;
-}
- */
 
 #image-container{  background:url(https://i.picsum.photos/id/2/5616/3744.jpg?hmac=l1XcSPFigtRLcO2F6Li-t17EIeylkWH94Oowb4vzApk);
   background-position:center;
@@ -210,28 +182,93 @@ footer h2{
 .fa-linkedin {
   background: #007bb5;
   color: white;
+}
 
   /* Responsive layout properties begin here */
-/* 
+
   @media only screen and (max-width: 800px) {
-    body {
-      background-color:blue;
-      width:60%;
-    }
+   .flex-container  {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+   }
+    h1 {
+  font-size:55px;
+  letter-spacing:3px;
+  width:100%;
+}
+ .navigation li a { 
+     display:inline
+    font-size: 35px;
+       margin:1rem;
+}
+.main{
+  font-size:15px;
+  padding:1rem; 
+  line-height:1.5rem;
+  letter-spacing:1px;
+ }
+   .gallery{
+    padding:2rem;
+  } 
+    img{width: 10rem;
+  height: 10rem;
+  margin: 1.5rem;}
+    
+  
+footer h2{
+  font-size:20px;
+  letter-spacing:3px;
   }
 
+ .fa {
+  padding: 10px;
+   }
 
-  @media  screen and (max-width: 500px) {
-     {
-      background: white;
-      color:yellow;
+ .fa a{
+  padding: 12px;
+  font-size: 20px;
     }
+   
+/* responsive cell phone size 500px */ 
+    
+    
+    @media only screen and (max-width: 500px) {
+   h1 {
+  font-size:30px;
+  letter-spacing:1px;
+}
+
+.flex-container  {
+  display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  padding: 20px;
+  height:90px;
+  width:100%;
   }
 
-@media  screen and (max-width: 500px) {
-     {
-      background: white;
-      color:yellow;
-    }
+}
+.navigation li a {
+    display:flex;
+  flex-direction:column;
+    padding:10px;
+    font-size: 45px;
+    font-family:Helvetica;
+    border-radius:20px;
+  margin:2rem;}
+    
+  .main{
+  color:#66FCF1;
+  font-family: 'Abril Fatface', cursive;
+  font-size:25px;
+  text-align:center;
+  padding:2rem; 
+  line-height:2rem;
+  letter-spacing:2px;
+  background:#1F2823;
+  margin-left:20%;
+  margin-right:20%;
+  border:dotted white;
+}
   }
- */
