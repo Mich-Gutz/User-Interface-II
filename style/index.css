@@ -20,13 +20,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-  *{
-  box-sizing: border-box;
-}
-
-
-
-
+ 
 
 /* My code begins here */
 body{
@@ -240,35 +234,43 @@ footer h2{
 }
 
 .flex-container  {
-  display: flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  padding: 20px;
-  height:90px;
-  width:100%;
-  }
+    padding:20px;
+  height:300px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+   }
 
 }
 .navigation li a {
-    display:flex;
-  flex-direction:column;
-    padding:10px;
-    font-size: 45px;
+  display:flex;
+    flex-direction:column;
+     padding:10px;
+    font-size: 18px;
     font-family:Helvetica;
-    border-radius:20px;
-  margin:2rem;}
+    border-radius:18px;
+   width:100%;
+  }
     
   .main{
-  color:#66FCF1;
-  font-family: 'Abril Fatface', cursive;
-  font-size:25px;
-  text-align:center;
-  padding:2rem; 
-  line-height:2rem;
-  letter-spacing:2px;
-  background:#1F2823;
-  margin-left:20%;
-  margin-right:20%;
-  border:dotted white;
+  font-size:12px;
+    padding:0rem; 
+  line-height:1rem;
+  letter-spacing:1px;
+    border:solid white .5px;}
+    
+   #image-container{  background:url(https://i.picsum.photos/id/2/5616/3744.jpg?hmac=l1XcSPFigtRLcO2F6Li-t17EIeylkWH94Oowb4vzApk);
+  background-position:center;
+  padding:2rem;
 }
-  }
+    .gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:5rem;
+  width:90%;
+}
+}
