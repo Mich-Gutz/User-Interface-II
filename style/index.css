@@ -1,4 +1,4 @@
-/* Reset to html */
+* Reset to html */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,16 +20,14 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
-
-
-
-
+ 
 
 /* My code begins here */
+
+
 body{
-    margin:0px;
-    padding:0px;
+    margin:0; 
+    padding:0px; 
     background:#0B0C10;
  }
 
@@ -86,36 +84,6 @@ font-family: 'Abril Fatface', cursive;
     transition: 0.5s;
     color:black;
 }
-  
-/* }
-section .cont .nav{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-around;}
-
- .nav {
-    list-style:none;
-    background:#45A29E;
-    text-align:center;
-    border: solid #66FCF1;
-    margin-left: auto;
-   martin-right:auto; 
-}
-
-.nav li{
-    display:inline-block;
-  
-}
-.nav ul { text-decoration: none;
-    color:white;
-    width:200px;
-    display:block;
-    padding:20px;
-    font-size: 40px;
-    font-family:Helvetica;
-  border-radius:20px;
-}
- */
 
 #image-container{  background:url(https://i.picsum.photos/id/2/5616/3744.jpg?hmac=l1XcSPFigtRLcO2F6Li-t17EIeylkWH94Oowb4vzApk);
   background-position:center;
@@ -210,28 +178,142 @@ footer h2{
 .fa-linkedin {
   background: #007bb5;
   color: white;
+}
 
-  /* Responsive layout properties begin here */
-/* 
+  /* Responsive layout properties begin here tablet*/
+
   @media only screen and (max-width: 800px) {
-    body {
-      background-color:blue;
-      width:60%;
-    }
+   .flex-container{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+   }
+     body{
+        margin:0 auto;
+        width:100%;
+      } 
+    h1 {
+  font-size:55px;
+  letter-spacing:3px;
+  width:100%;
+}
+ .navigation li a { 
+     display:inline
+    font-size: 35px;
+       margin:1rem;
+}
+.main{
+  font-size:15px;
+  padding:1rem; 
+  line-height:1.5rem;
+  letter-spacing:1px;
+ }
+   .gallery{
+    padding:2rem;
+  } 
+    img{width: 10rem;
+  height: 10rem;
+  margin: 1.5rem;
+  border-radius: 50%;  
+  }
+    
+footer h2{
+  font-size:20px;
+  letter-spacing:3px;
   }
 
+ .fa {
+  padding: 10px;
+   }
 
-  @media  screen and (max-width: 500px) {
-     {
-      background: white;
-      color:yellow;
-    }
+ .fa a{
+  padding: 12px;
+  font-size: 20px;
+  }
+  
+  
+  .gallery2{
+    display:flex;
+    flex-wrap: wrap;
+    padding:1rem;
+    border:solid 2pt yellow;
+  } 
+    img{
+  width: 20rem;
+  height: 10rem;
+  margin: 3rem;
+  border-radius: 50%;  
+  }
+/* responsive cell phone size 500px */ 
+    
+    
+    @media only screen and (max-width: 500px) {
+     body{
+        margin:0 auto;
+        width:100%;
+      } 
+     
+   h1 {
+  font-size:26px;
+  letter-spacing:1px;
+  border-radius:0px;
+ }
+
+.flex-container  {
+    padding:0px;
+        }
+    
+.navigation li a {
+    color:white;
+    display:block;
+    font-size: 12px;
+    border-radius:0px;
+  }
+    
+  .main{
+  font-size:12px;
+    padding:0rem; 
+  line-height:1rem;
+  letter-spacing:1px;
+    border:solid white .5px;}
+    
+   #image-container{  background:url(https://i.picsum.photos/id/2/5616/3744.jpg?hmac=l1XcSPFigtRLcO2F6Li-t17EIeylkWH94Oowb4vzApk);
+  background-position:center;
+  }
+    
+  .gallery{
+  flex-direction:column;
+  padding:5rem;
+  width:65%;
+}
+  img{
+  width: 8rem;
+  height: 8rem;
+  margin: .5rem;
+      }
+    
+  footer{
+  justify-content: space-around;
+  flex-wrap:wrap;
+  width:100%;
+  padding:0px;
+}
+    
+footer h2{
+  font-size:18px;
+  letter-spacing:1px;
+  width:100%;
+  border-radius:0%;
   }
 
-@media  screen and (max-width: 500px) {
-     {
-      background: white;
-      color:yellow;
-    }
+  .fa {
+    style:flex;
+   flex-direction:column;
+   flex-flow:row-wrap;
+     }
+
+ .fa a{
+    border-radius:10%;
+      font-size: 14px;
+      }
   }
- */
